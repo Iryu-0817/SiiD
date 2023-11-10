@@ -1,10 +1,12 @@
-const logAll = (array) => {
+const addAndLog = (array) => {
+
     for( let i = 0; i < array.length; i++) {
-        console.log(array[i]);
+        for( let j = 0; j < array.length; j++) {
+            console.log(array[i] + array[j]);
+        }
     }
-}
+} 
 
-logAll([1,2,3,4,5]);
-logAll([1,2,3,4,5,6]);
-logAll([1,2,3,4,5,6,7]);
-
+addAndLog(["A","B","C"]);
+addAndLog(["A","B","C", "D"]);
+addAndLog(["A","B","C", "D", "E"]);
