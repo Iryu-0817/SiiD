@@ -1,24 +1,15 @@
-const binarySearch = (array, key) => {
-    var low = 0;
-    var high = array.length - 1;
-    var mid;
-    var element;
+for(let i = 0; i < 100; i++ ) {
+    console.log(i);
 
-    while (low <= high) {
-        mid = Math.floor((low + high) / 2, 10);
-        element = array[mid];
-
-        if(element < key) {
-            low = mid + 1;
-        } else if (element > key) {
-            high = mid - 1; 
-        } else {
-            return mid;
-        }
+    if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else if (i % 15 === 0) {
+        console.log("FizzBuzz");
+    } else {
+        console.log(i);
     }
 
-return -1;
 
 }
-
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 3));
