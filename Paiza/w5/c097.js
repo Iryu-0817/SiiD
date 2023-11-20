@@ -12,7 +12,7 @@ reader.on('line', (line) => {
 });
 reader.on('close', () => {
   var data_array = lines[0].split(' ');
-  var sum_pepole = Number(data_array[0]);
+  var sum_people = Number(data_array[0]);
   var present_a = Number(data_array[1]);
   var present_b = Number(data_array[2]);
   

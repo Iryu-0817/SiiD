@@ -19,6 +19,7 @@ reader.on('close', () => {
     var frame_fixed = frame.join('');
     
     
+    
   console.log(frame_fixed);
   console.log('+' + lines[0] + '+');
   console.log(frame_fixed);
