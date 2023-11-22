@@ -1,0 +1,31 @@
+body {
+    background: #eee;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.flex {
+    margin: 0 auto;
+}
+
+ .flex-items {
+    background-color: aqua;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
