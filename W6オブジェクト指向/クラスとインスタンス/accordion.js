@@ -1,7 +1,12 @@
 (() => {
 
+// 独立して存在しているのは関数！！！
+// クラスの中にあるものはメソッドと呼ばれる！！！
+
+
+
     class Accordion {
-        //constructor=初期化
+        //constructor=初期化 インスタンス作った時に一番最初に呼ばれる関数（メソッド）
         constructor() {
             const $elm = document.querySelector('#js-accordion');
     const $trigger = $elm.getElementsByTagName('a')
