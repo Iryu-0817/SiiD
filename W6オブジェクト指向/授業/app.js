@@ -4,7 +4,6 @@ class Rectangle {
         this.width = width;
 
         // 引数を受け継ぐ時にthisをつけると値の行き来ができる。しないと行き来できない。
-
     }
     calculateArea() {
         return this.height * this.width;

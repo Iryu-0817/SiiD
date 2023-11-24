@@ -6,19 +6,22 @@
 
 
     class Accordion {
-        //constructor=初期化 インスタンス作った時に一番最初に呼ばれる関数（メソッド）
-        constructor() {
-            const $elm = document.querySelector('#js-accordion');
-    const $trigger = $elm.getElementsByTagName('a')
+    //constructor=初期化 インスタンス作った時に一番最初に呼ばれる関数（メソッド）
+        constructor(obj) {
+        const $elm = document.querySelector(obj.hookName);
+        const $trigger = $elm.getElementsByTagName(obj.tagName)
+        
 
 
-    const $triggerLen = $trigger.length
-    let index = 0;
-    while (index < $triggerLen) {
-        $trigger[index].addEventListener('click', (e) => clickHandler(e)); 
-        index++;
+
+
+        const $triggerLen = $trigger.length
+        let index = 0;
+        while (index < $triggerLen) {
+            $trigger[index].addEventListener('click', (e) => this.clickHandler(e)); 
+            index++;
+                }
             }
-        }
 
          clickHandler = (e) => {
         
@@ -35,7 +38,10 @@
         };
     }
 
-    
+    const fuckingAccordion = new Accordion( {
+        hookName: '#js-faq',
+        tagName: 'p'
+    });
 
 
 
