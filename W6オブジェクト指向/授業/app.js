@@ -1,18 +1,17 @@
-class Rectangle {
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
 
-        // 引数を受け継ぐ時にthisをつけると値の行き来ができる。しないと行き来できない。
+class Person {
+    constructor(name) {
+        this.name = name;
     }
-    calculateArea() {
-        return this.height * this.width;
+
+    sayHello() {
+        // 「` `」と「' '」を間違えないようにする
+        return `${this.name} says hello!`;
     }
-}   
-
-let myRectangle = new Rectangle(5, 10);
-console.log(myRectangle.calculateArea());
+}      
 
 
-// Rectangle(5, 10)の数字がconstructor(height, width)に代入され、中のheightとwidthにも代入されてそれが'this.'で定義されている
-// calculateArea()内
+
+let john = new Person("john");
+
+console.log(john.sayHello());  // Outputs: "John says hello!"

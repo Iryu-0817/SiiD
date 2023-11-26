@@ -30,24 +30,36 @@
             const $target = e.currentTarget;
     
             const $content = $target.nextElementSibling;
+
+
+            
             if($content.style.display === 'block'){
                 $content.style.display = 'none';
             } else {
                 $content.style.display = 'block';
             }
         };
+
+        actionUnko() {
+            console.log('Hello World Unko!');
+        }
     }
+
 
     const fuckingAccordion = new Accordion( {
         hookName: '#js-faq',
         tagName: 'p'
     });
 
+    const dummyAccordion = new Accordion ({
+        hookName: '#js-accordion',
+        tagName: 'a'
+    });
 
-
-
-    
-        
+    const miniAccordion = new Accordion({
+        hookName: '#js-accordion-mini',
+        tagName: 'dt'
+    })
     
 
 })();
