@@ -6,7 +6,7 @@
 
 .flex-items {
     background-color: pink;
-    width: calc(25% - 46px); /* margin padding分を引く */
+    width: calc(50% - 46px); /* margin padding分を引く */
 	margin: 3px;
 	padding: 20px;
     border-radius: 10px;
@@ -15,32 +15,3 @@
 
 
 
-
-
-
-
-
-/* @charset "utf-8";
-
-
-.flex {
-    display: grid;
-    width: 0 auto;
-    height: 300px;
-    gap: 10px;
-    
-grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.flex-items {
-    position: relative;
-    border-radius: 10px;
-    background-color: pink;
-}
-
-.flex-items > p {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
