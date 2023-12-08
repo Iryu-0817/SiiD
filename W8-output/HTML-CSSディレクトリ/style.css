@@ -6,12 +6,11 @@
 
 .flex-items {
     background-color: pink;
-    width: calc(16.6% - 46px); /* margin padding分を引く */
+    width: calc(50% - 46px); /* margin padding分を引く */
 	margin: 3px;
 	padding: 20px;
     border-radius: 10px;
     text-align: center;
-}
-
+}   
 
 
